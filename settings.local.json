@@ -1,5 +1,5 @@
 {
   "permissions": {
-    "allow": ["Bash(npm view:*)", "Bash(npm install:*)", "Bash(npm run build:*)", "WebSearch", "Bash(npm install:*)", "Bash(npx tsx:*)"]
+    "allow": ["Bash(npm view:*)", "Bash(npm install:*)", "Bash(npm run build:*)", "WebSearch", "Bash(npm install:*)", "Bash(grep:*)", "Bash(npx tsx:*)"]
   }
 }
