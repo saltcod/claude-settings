@@ -1,10 +1,5 @@
 {
   "permissions": {
-    "allow": [
-      "Bash(npm view:*)",
-      "Bash(npm install:*)",
-      "Bash(npm run build:*)",
-      "Bash(npx prisma generate:*)"
-    ]
+    "allow": ["Bash(npm view:*)", "Bash(npm install:*)", "Bash(npm run build:*)", "WebSearch", "Bash(npm install:*)", "Bash(npx tsx:*)"]
   }
 }
