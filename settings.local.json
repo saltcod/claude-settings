@@ -1,5 +1,30 @@
 {
   "permissions": {
-    "allow": ["Bash(npm view:*)", "Bash(npm install:*)", "Bash(npm run build:*)", "WebSearch", "Bash(npm install:*)", "Bash(grep:*)", "Bash(npx tsx:*)"]
+    "allow": [
+      "Bash(tree:*)",
+      "WebFetch(domain:www.zenrows.com)",
+      "Bash(npx playwright install chromium)",
+      "WebFetch(domain:github.com)",
+      "Bash(cat:*)",
+      "Bash(git add:*)",
+      "Bash(git restore:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nFix chromium-min configuration for Vercel deployment\n\n- Configure chromium-min to use tar file URL from Vercel deployment\n- Skip postinstall script on Vercel \\(uses committed tar file\\)\n- Properly construct tar URL using VERCEL_URL environment variable\n\n🤖 Generated with [Claude Code]\\(https://claude.com/claude-code\\)\n\nCo-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nSimplify capture to Vercel-only deployment\n\n- Remove local vs serverless detection logic\n- Use chromium-min with VERCEL_PROJECT_PRODUCTION_URL\n- Add debug logging for environment variables\n\n🤖 Generated with [Claude Code]\\(https://claude.com/claude-code\\)\n\nCo-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git commit:*)",
+      "Bash(rm:*)",
+      "Bash(xargs cat:*)",
+      "Bash(find:*)",
+      "Bash(supabase start:*)",
+      "Bash(supabase db diff:*)",
+      "Bash(supabase db reset:*)",
+      "Bash(supabase status:*)",
+      "Bash(curl:*)",
+      "Bash(npm uninstall:*)",
+      "Bash(supabase migration:*)",
+      "Bash(git push:*)",
+      "Bash(git pull:*)",
+      "Bash(ls:*)",
+      "Bash(supabase stop:*)"
+    ]
   }
 }
